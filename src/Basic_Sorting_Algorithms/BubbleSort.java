@@ -34,7 +34,7 @@ public class BubbleSort {
             }
             // if (swap == 0) break;
 
-            if (isSorted == true) {
+            if (isSorted) {
                 break;
             }
         }
