@@ -19,6 +19,7 @@ public class RotateArray {
 
     }
 
+    // Function to reverse a portion of the array
     public static void reverse(int[] arr, int start, int end) {
         while (start < end) {
             int temp = arr[start];

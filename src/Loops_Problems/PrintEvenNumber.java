@@ -1,4 +1,4 @@
-package Loops;
+package Loops_Problems;
 
 public class PrintEvenNumber {
     public static void main(String[] args) {
