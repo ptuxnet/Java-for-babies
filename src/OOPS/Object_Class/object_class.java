@@ -1,5 +1,7 @@
 package OOPS.Object_Class;
 
+import java.util.Objects;
+
 public class object_class {
     public static void main(String[] args) {
         Student s1 = new Student();
@@ -20,9 +22,14 @@ public class object_class {
 
         System.out.println(s1.hashCode() == s2.hashCode()); // Output: true
 
+        System.out.println(s1 instanceof Student);
+        System.out.println(s1.getClass().getName()); // Output: OOPS.Object_Class.Student
     }
 
 }
+
+// InstanceOf = operator used to check if an object is an instance of a specific
+// class
 
 class Student {
     String name;
@@ -53,11 +60,12 @@ class Student {
 
     @Override
     public int hashCode() {
-        int result = 17;
-        result = 31 * result + age;
-        result = 31 * result + (name != null ? name.hashCode() : 0);
-        return result;
+        // int result = 17;
+        // result = 31 * result + age;
+        // result = 31 * result + (name != null ? name.hashCode() : 0);
+        // return result;
 
+        return Objects.hash(name, age);
     }
 
 }
